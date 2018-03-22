@@ -74,9 +74,10 @@ public class ExampleExperiment {
          *   bbob-constrained     48 constrained noiseless single-objective functions
          *
          * Adapt to your need. Note that the experiment is run according
+         *
          * to the settings, defined in exampleExperiment(...) below.
          */
-		exampleExperiment("bbob", "bbob", randomGenerator);
+		exampleExperiment("bbob-noisy", "bbob-noisy", randomGenerator);
 
 		System.out.println("Done!");
 		System.out.flush();

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--BuidFile for jarring project-->
+
+<project name="test_torpool" default="run" basedir=".">
+    <description>buildfile</description>
+
+    <!-- global properties -->
+    <!--<property name="src" location="src"/>-->
+    <!-- no need source, use lastly compiled classes-->
+    <property name="build" location="."/>
+    <property name="main" value = "ExampleExperiment"/>
+    <property name="bib" location="lib"/>
+
+    <target name="compile" description="compile the source " >
+        <javac srcdir="." destdir="${build}"/>
+    </target>
+
+    <target name="run" description="run" >
+        <java classname="${main}" fork="true" jvmargs="-Djava.library.path=."/>
+    </target>
+
+</project>
