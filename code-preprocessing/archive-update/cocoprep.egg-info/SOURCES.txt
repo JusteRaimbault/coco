@@ -1,0 +1,11 @@
+setup.py
+cocoprep.egg-info/PKG-INFO
+cocoprep.egg-info/SOURCES.txt
+cocoprep.egg-info/dependency_links.txt
+cocoprep.egg-info/top_level.txt
+interface/coco.c
+interface/coco_archive.pyx
+python/__init__.py
+python/archive_exceptions.py
+python/archive_functions.py
+python/archive_load_data.py

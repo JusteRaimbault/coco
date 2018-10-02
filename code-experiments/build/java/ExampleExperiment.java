@@ -77,7 +77,10 @@ public class ExampleExperiment {
          *
          * to the settings, defined in exampleExperiment(...) below.
          */
-		exampleExperiment("bbob-noisy", "bbob-noisy", randomGenerator);
+		String suite = "bbob-noisy";
+		System.out.println("Running suite : "+suite);
+
+		exampleExperiment(suite, suite, randomGenerator);
 
 		System.out.println("Done!");
 		System.out.flush();

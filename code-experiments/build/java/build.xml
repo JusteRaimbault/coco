@@ -15,7 +15,7 @@
         <javac srcdir="." destdir="${build}"/>
     </target>
 
-    <target name="run" description="run" >
+    <target name="run" description="run" depends="compile">
         <java classname="${main}" fork="true" jvmargs="-Djava.library.path=."/>
     </target>
 
